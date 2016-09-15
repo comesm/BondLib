@@ -1,14 +1,14 @@
 {
-  "name": "Bondlib",
+  "name": "finlib",
   "version": "1.0.0",
-  "description": "A library for the managemen of fixed income portfolios",
+  "description": "A library for the management of fixed income portfolios",
   "main": "Bond.js",
   "scripts": {
     "test": "test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/comesm/BondLib.git"
+    "url": "git+https://github.com/comesm/FinLib.git"
   },
   "keywords": [
     "financial",
@@ -21,7 +21,7 @@
   "author": "Michael F. Comes",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/comesm/BondLib/issues"
+    "url": "https://github.com/comesm/FinLib/issues"
   },
-  "homepage": "https://github.com/comesm/BondLib#readme"
+  "homepage": "https://github.com/comesm/FinLib#readme"
 }
