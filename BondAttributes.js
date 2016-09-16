@@ -3,17 +3,22 @@ var Debt = {
 
   coupon: 5,
   callDate: new Date(2021,2,15),
-  yield:undefined,
-  price:undefined,
   maturityDate: new Date(12,31,2039),
   todayDate:new Date(),
+
+  yield:undefined,
+  price:undefined,
+
   firstSettleDate:undefined,
   nextSettleDate:undefined,
+  nextPaymentDate:undefined,
+  dtdDate:undefined,
+  prevPaymentDate:undefined,
+
   parAmount:undefined,
   marketValue:undefined,
-  nextPaymentDate:undefined,
   nextPaymentAmt:undefined,
-  dtdDate:undefined,
+
   interestAccrued: undefined
 }
 

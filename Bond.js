@@ -23,6 +23,10 @@ Bond.prototype.getCallDate = function() {
   return this.callDate;
 }
 
+Bond.prototype.getParAmount = function() {
+  return this.parAmount;
+}
+
 Bond.prototype.getNextSettleDate = function() {
   return this.getNextSettleDate;
 }
@@ -50,7 +54,11 @@ Bond.prototype.numDays = function(begDate, endDate) {
 
     var day = endDate.getDate() - begDate.getDate();
 
-    return (year + month + day) * 360
+    return (year + month + day) * 360;
+}
+
+Bond.prototype.getAccruedInterest = function() {
+  return coupon * getParAmount() * (numDays(getPrevPaymentDt(), getTodayDate()) /360);
 
 }
 
@@ -58,8 +66,15 @@ Bond.prototype.getYieldToWorst = function() {
     return;
 }
 
-Bond.prototype.getPrevPaymentDt = function() {
+Bond.prototype.getYieldToWorst = function() {
     return;
+}
+Bond.prototype.getTodayDate = function() {
+    return this.todayDate;
+}
+
+Bond.prototype.getPrevPaymentDt = function() {
+    return this.prevPaymentDate;
 }
 
 module.exports = Bond;
