@@ -1,19 +1,19 @@
 
 
-
-function Bond(coupon, settle, yield) {
-   this.coupon = coupon;
-   this.worst = this.computeWorst();
+function Bond(attributes) {
+   for(var attribute in attributes) {
+    this[attribute] = attributes[attribute];
+   }
  }
 
 Bond.prototype.getCoupon = function() {
+  console.log(this.coupon);
   return this.coupon;
 }
 
-Bond.prototype.computeWorst = function() {
-  //return most recent 'priced-to-date'
-
-  return;
+Bond.prototype.getWorstDate = function() {
+  return this.getYieldToWorst() > this.getCoupon() ?
+    this.getMaturity() : this.getCallDate();
 }
 
 Bond.prototype.callable = function() {
@@ -21,17 +21,27 @@ Bond.prototype.callable = function() {
 }
 
 Bond.prototype.getCallDate = function() {
-  return this.callDate();
+  return this.callDate;
 }
 
 Bond.prototype.getSettleDate = function() {
-  return this.settleDate();
+  return this.settleDate;
+}
+
+Bond.prototype.getMaturity = function() {
+  return this.maturityDate;
 }
 
 Bond.prototype.getTradeDate = function() {
   return this.tradeDate();
 }
 
+Bond.prototype.getYieldToWorst = function() {
+    return;
+}
 
+Bond.prototype.getLastPaymentDt = function() {
+    return;
+}
 
 module.exports = Bond;
