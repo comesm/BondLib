@@ -1,6 +1,6 @@
 {
   "name": "bondlib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library for the management of fixed income portfolios",
   "main": "Bond.js",
   "scripts": {
@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/comesm/BondLib/issues"
   },
-  "homepage": "https://github.com/comesm/BondLib#readme"
+  "homepage": "https://github.com/comesm/BondLib#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
 }
