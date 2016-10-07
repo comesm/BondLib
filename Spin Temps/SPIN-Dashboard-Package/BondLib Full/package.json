@@ -1,0 +1,35 @@
+{
+  "name": "bondlib",
+  "version": "1.0.1",
+  "description": "A library for the management of fixed income portfolios",
+  "main": "Bond.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comesm/BondLib.git"
+  },
+  "keywords": [
+    "financial",
+    "library",
+    "bond",
+    "debt",
+    "fixed",
+    "income"
+  ],
+  "author": "Michael F. Comes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comesm/BondLib/issues"
+  },
+  "homepage": "https://github.com/comesm/BondLib#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  },
+  "dependencies": {
+    "google-auth-library": "^0.9.8",
+    "googleapis": "^13.0.0"
+  }
+}
